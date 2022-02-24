@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+    <ModulePrefs scrolling="true" height="800">
+        <Optional feature="com.ibm.rdm.rm.api"></Optional>
+        <Required feature="dynamic-height"></Required>
+    </ModulePrefs>
+    <Content type="text/html" href="updateWIState.html"></Content>
+</Module>

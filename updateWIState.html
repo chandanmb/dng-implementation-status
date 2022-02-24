@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Workitem Status Update</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min..js" type="text/javascript"></script>
+    <script src="js/jquery-3.6.0-min.js" type="text/javascript"></script>
+    <script src="js/OslcUtil.js" type="text/javascript"></script>
+    <script src="js/helper.js" type="text/javascript"></script>
+    <script src="js/RmClientApi.js" type="text/javascript"></script>
+    <script src="js/application.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container bg-dark text-white border py-3 my-3">
+            <h3>Workitem Status Updater</h3>
+            <div class="row mb-3">
+                <div class="col-sm-1 text-center" id="loadingIcon">
+                    <div class="spinner-grow text-light" style="width: 3rem; height: 3rem;" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <div class="col-sm-2 alert alert-info" id="userErrorMessages"></div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-10 offset-sm-2">
+                    <button type="button" id="updateWIState" class="btn btn-primary">Update Implementation Status
+                    </button>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-10 offset-sm-2">
+                    <div class="progress" id="progress">
+                        <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                            role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 100%">Please wait...</div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-10 offset-sm-2">
+                    <label class="col-sm-2 col-form-label form-control-sm" id="lblStatusCount"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
